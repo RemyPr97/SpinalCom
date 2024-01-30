@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPINALCOM</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <img
+        src="https://www.hexabim.com/media/reviews/photos/original/94/04/b9/797-spinalcom-49-1526481829.jpg"
+        alt="Logo"
+        class="logo"
+      />
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#">PROFIL</a></li>
+          <li><a href="#">TICKET</a></li>
+          <li><a href="#" id="log">LOGOUT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <aside class="panel left-panel">
+        <header class="panel-header">
+          <h2>Liste des bâtiments</h2>
+          <button id="addBuildingButton">AJOUTER UN BÂTIMENT</button>
+        </header>
+        <input type="search" id="searchBar" placeholder="Rechercher un batiment" />
+        <ul id="buildingList"></ul>
+      </aside>
+      <main class="building-panel">
+        <div class="panelb">
+          <h2 id="buildingName">Occupation du bâtiment</h2>
+          <button id="addFloorButton">Ajouter un étage</button>
+        </div>
+        <input
+          type="search"
+          id="searchFloor"
+          placeholder="Rechercher un étage"
+        />
+        <ul id="floorList"></ul>
+      </main>
+      <aside class="panel right-panel">
+        <header class="panel-header">
+          <h2 id="floorName">Nom de l'étage</h2>
+          <button id="addRoomButton">Ajouter une pièce</button>
+        </header>
+        <input
+          type="search"
+          id="searchRoom"
+          placeholder="Rechercher une pièce"
+        />
+        <ul id="roomList"></ul>
+      </aside>
+    </div>
+    
+    <script src="index.js"></script>
+  </body>
+  <footer class="site-footer">
+      <p>© SPINALCOM</p>
+      <address>
+        Bâtiment 86, Avenue Gustave Coriolis, 91128 Palaiseau, France
+      </address>
+    </footer>
+</html>

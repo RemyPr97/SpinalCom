@@ -1,0 +1,217 @@
+body,
+html {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #ecf0f1;
+}
+
+#buildingList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#buildingList li {
+  margin: 0;
+  padding: 10px;
+  border-bottom: 1px solid #dfe4ea;
+}
+
+#buildingList li:hover {
+  background-color: #ecf0f1;
+  cursor: pointer;
+}
+
+#floorList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#floorList li {
+  padding: 10px;
+  margin: 0;
+  border-bottom: 1px solid #dfe4ea;
+}
+
+#floorList li:hover {
+  background-color: #ecf0f1;
+  cursor: pointer;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  background-color: #3498db;
+  padding: 10px 20px;
+  color: white;
+}
+
+#log {
+  color: rgb(178, 75, 57);
+  font-weight: bold;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 25px;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-menu li {
+  margin-right: 20px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  background-color: #1a5a83;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 151px;
+  gap: 20px;
+}
+
+.panel,
+.building-panel {
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin: 10px;
+  flex-grow: 1;
+  padding: 4em;
+}
+
+.building-panel h2 {
+  margin: 0;
+  color: #333;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.panel-header h2 {
+  margin: 0;
+  color: #333;
+}
+
+.panelb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+#roomList li {
+  padding: 5px;
+  border-bottom: 1px solid #dfe4ea;
+}
+
+#roomList li:hover {
+  background-color: #ecf0f1;
+  cursor: pointer;
+}
+
+#roomList {
+  list-style: none;
+  padding: 10px;
+
+  margin: 0;
+}
+
+#roomList li {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+#roomList li.occupe {
+  color: red;
+  font-weight: bold;
+}
+#roomList li.libre {
+  color: green;
+  font-weight: bold;
+}
+#roomList li.inconnu {
+  color: rgb(68, 62, 62);
+  font-weight: bold;
+}
+
+button {
+  background-color: #3498db;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+input[type="search"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dfe4ea;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.site-footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.site-footer p,
+.site-footer address {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.site-footer address {
+  font-style: normal;
+}
+
+.occupied {
+  color: green;
+}
+.unoccupied {
+  color: red;
+}
+.undefined {
+  color: grey;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .panel,
+  .building-panel {
+    width: 100%;
+  }
+}
